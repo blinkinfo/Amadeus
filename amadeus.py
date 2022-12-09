@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "Your OpenAI key"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "Your Telegram Key"
+    tgkey = "5829411645:AAHtHzzC1hoG8AXelG4Nua09cY9vMGInn4w"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Makise Kurisu'
-username = 'Your name here'
+botname = 'S-One Lite AI BOT'
+username = 'princelite_ai_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,8 +66,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'S-One Lite AI BOT'
+        username = 'princelite_ai_bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -93,16 +93,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'S-One Lite AI BOT'
+        username = 'princelite_ai_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'S-One Lite AI BOT'
+        username = 'princelite_ai_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -128,8 +128,8 @@ def retry(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Makise Kurisu'
-        username = 'thewickedkarma'
+        botname = 'S-One Lite AI BOT'
+        username = 'princelite_ai_bot'
         update.message.reply_text('Send a message!')
         return 
     else:
@@ -189,8 +189,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'thewickedkarma'
-                botname = 'Makise Kurisu'
+                username = 'princelite_ai_bot'
+                botname = 'S-One Lite AI BOT'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
