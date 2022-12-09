@@ -47,7 +47,16 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 
-completion = openai.Completion()
+#completion = openai.Completion()
+completion = openai.Completion.create(
+    engine="text-davinci-003",
+    prompt=input_text,
+    max_tokens=3500,
+    temperature=0.85,
+    n = 1,
+    stop=None
+)
+
 
 
 ##################
